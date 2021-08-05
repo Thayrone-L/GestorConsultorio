@@ -15,6 +15,19 @@ namespace GestorConsultorio
         public Form1()
         {
             InitializeComponent();
+            timer1.Start();
+            
+        }
+
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            tbRelogio.Text = DateTime.Now.ToShortTimeString();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
